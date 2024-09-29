@@ -1,7 +1,7 @@
 #include "find.hpp"
 #include <string>
 
-int find(std::string str, char ch) {
+int find(const std::string & str, const char & ch) {
     for (int i = 0; i < str.length(); ++i) {
         if (str[i] == ch) {
             return i;
@@ -10,7 +10,7 @@ int find(std::string str, char ch) {
     return -1; 
 }
 
-int find(std::string str, std::string substr) {
+int find(const std::string & str, const std::string & substr) {
     for (int i = 0; i <= str.length(); ++i) { 
         if (str[i] == substr[0]) {
             int j = 1;
