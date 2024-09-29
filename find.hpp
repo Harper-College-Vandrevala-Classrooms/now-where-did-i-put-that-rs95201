@@ -1,8 +1,8 @@
 
 #include <string>
 
-int find(std::string str, char ch);
-int find(std::string str, std::string substr);
+int find(const std::string & str, const char & ch);
+int find(const std::string & str, const std::string & substr);
 
 
 
